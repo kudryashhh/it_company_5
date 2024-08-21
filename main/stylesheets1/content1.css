@@ -1,0 +1,389 @@
+body{
+overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;               /* ширина scrollbar */
+  }
+  body::-webkit-scrollbar-track {
+    background: none       /* цвет дорожки */
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+    border: none  /* padding вокруг плашки */
+  }
+
+  .decode-text {
+    margin-top: 10%;
+    position: absolute;
+    z-index: 3;
+    width: 64%;
+    font-size: 4.9vw;
+    text-align: center;
+    margin-left: 18%;
+
+   
+  }
+  .space {
+    position: absolute;
+    z-index: 4;
+    display: inline-block;
+    
+  }
+
+  .text-animation:not(:last-child) {
+    margin-left: -2.7vw;
+}
+  .text-animation {
+    z-index: 3;
+    display: inline-block;
+    position: relative;
+    color: transparent;
+    text-transform: uppercase;
+     padding-bottom:1%;
+
+    &:before {
+      content: "";
+      color: black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background:#25282f;
+      width: 0vw;
+      height: 0.8em;
+      -webkit-transform: translate(-50%, -55%);
+      -ms-transform: translate(-50%, -55%);
+      transform: translate(-50%, -55%);
+    }
+  
+    &.state-1 {
+      &:before {
+        width: 10%;
+      }
+    }
+    &.state-2 {
+      &:before {
+        width: 0.9em;
+      }
+    }
+    &.state-3 {
+      color: black;
+      &:before {
+        width: 0;
+      }
+    }
+  }
+  
+  
+  
+  
+  div {
+    font-family: "Medium", monospace;
+  }
+  
+
+.back{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    margin-left: -1%;
+    margin-top: -1%;
+}
+
+.back1{
+    position: absolute;
+    width: 101%;
+}
+
+
+.navbar{
+    position: absolute;
+    z-index: 2;
+    margin-left: 2%;
+    margin-top: 0.5%;
+}
+
+.menu{
+    box-shadow: 0px 2px 10px -2px rgb(183, 183, 183);
+
+    border-radius: 14px;
+    position: absolute;
+    width: 94vw;
+    height: 3.4vw;
+    background-color: rgb(255, 255, 255);
+    
+    
+}
+
+.logo{
+    position: absolute;
+z-index: 3;
+width: 17%;
+margin-top: -0.1%;
+margin-left: 3%;
+}
+
+
+.line{
+    position: absolute;
+    z-index: 3;
+    margin-left: 91.1%;
+    margin-top: 2.8%;
+    width: 5%;
+    
+}
+
+.line_1{
+    position: absolute;
+    z-index: 3;
+    width: 78%;
+    display: none;
+   
+}
+
+
+.contacts{
+    position: absolute;
+    font-family: 'Roboto';
+    z-index: 3;
+    font-size: 1.1vw;
+    margin-left: 91%;
+    margin-top: 1.5%;
+}
+
+    
+ 
+
+ 
+.slogan{
+    font-family: Medium;
+    z-index: 3;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 15%;
+    font-size: 5.6vw;
+    text-align: center;
+}
+
+.main_text{
+    position: absolute;
+    font-family: 'Roboto';
+    z-index: 3;
+    font-size: 1.1vw;
+    margin-left: 0.8%;
+    margin-top: 35%;
+}
+
+.block{
+    margin-left: 1.4%;
+}
+
+.services_t{
+    font-family: Medium;
+    z-index: 3;
+    position: absolute;
+    margin-top: 48%;
+    margin-left: 2%;
+    font-size: 1.6vw;
+    text-align: center;
+}
+
+.scroll{
+    position: absolute;
+    margin-left: -0.5%;
+    margin-top: 51%;
+    width: 10%;
+    overflow-x: scroll;
+    width: 105vw;
+    height: 17vw;
+    scroll-behavior: smooth;
+    
+    
+}
+
+.scroll::-webkit-scrollbar {
+    width: 0;
+  }
+
+.w1,.w2,.w3,.w4,.w5,.w6,.w7{
+    z-index: 3;
+    box-shadow: 0px 2px 10px -2px rgb(175, 175, 175);
+    
+    border-radius: 14px;
+    position: absolute;
+    width: 30vw;
+    margin-left: 1%;
+    margin-top: 1%;
+    height: 13vw;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.w2{
+    margin-left: 33%;
+}
+
+.w3{
+    margin-left: 65%;
+    
+}
+
+.w4{
+    margin-left: 97%;
+}
+
+.w5{
+    margin-left: 129%;
+}
+
+.w6{
+    margin-left: 161%;
+}
+
+
+.w7{
+    margin-left: 170%;
+    opacity: 0;
+}
+
+#button{
+    width: 8vw;
+    height: 3vw;
+    z-index: 3;
+    position: absolute;
+    font-size: 1.1vw;
+    background-color: black;
+    border-radius: 0.6vw;
+    border-style: none;
+    cursor: pointer;
+    margin-top: 67%;
+    margin-left: 2%;
+}
+
+.tt{
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+}
+
+
+
+#button:hover{
+    background-color: rgb(70, 70, 70);
+}
+
+
+.pointer{
+    position: absolute;
+    z-index: 2;
+    margin-top: 35%;
+    margin-left: 72%;
+}
+
+.c1{
+    position: absolute;
+    width: 1.6%;
+    margin-top: 6.3%;
+    margin-left: 30.45%;
+}
+
+.c2{
+    position: absolute;
+    width: 1.6%;
+    margin-top: 6.3%;
+    margin-left: 62.4%
+}
+
+.c3{
+    position: absolute;
+    width: 1.6%;
+    margin-top: 6.3%;
+    margin-left: 94.5%;
+}
+
+.c4{
+    position: absolute;
+    width: 1.6%;
+    margin-top: 6.3%;
+    margin-left:126.5%;
+}
+
+.c5{
+    position: absolute;
+    width: 1.6%;
+    margin-top: 6.3%;
+    margin-left:158.5%;
+}
+
+
+.t1,.t2,.t3,.t4,.t5,.t6{
+    position: absolute;
+    font-family: "Medium";
+    z-index: 3;
+    font-size: 1.6vw;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.t1_2,.t2_2,.t3_2,.t4_2,.t5_2,.t6_2{
+    position: absolute;
+    font-family: "Roboto";
+    z-index: 3;
+    text-align: center;
+    margin-top: 6%;
+    margin-left: 1.7%;
+    font-size: 1.05vw;
+}
+
+.t2{
+    margin-left: 43%;
+}
+
+.t2_2{
+    margin-left: 34.5%;
+}
+
+.t3{
+    margin-left: 70%;
+}
+
+.t3_2{
+    margin-left: 66.5%;
+}
+.t4{
+    margin-left: 86.5%;
+    width: 50%;
+}
+
+.t4_2{
+    margin-left: 86.3%;
+    width: 50%;
+}
+
+.t5{
+    margin-left: 118.4%;
+    width: 50%;
+}
+
+.t5_2{
+    margin-left: 118.3%;
+    width: 50%;
+}
+
+.t6{
+    margin-left: 150%;
+    width: 50%;
+}
+
+.t6_2{
+    margin-left: 150.5%;
+    width: 50%;
+}
+
+
+
+
+
+
+

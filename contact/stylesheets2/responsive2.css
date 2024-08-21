@@ -1,0 +1,17 @@
+@media screen and (min-width: 1919px){
+
+
+  .line_2{
+    width: 110%;
+    margin-top: 20%;
+  }
+    }
+    @media screen and (min-width: 1439px)and (max-width: 1919px){
+
+          .line_22{
+            width: 115%;
+            margin-top: 10%;
+            margin-left: 10%;
+          }
+          
+    }

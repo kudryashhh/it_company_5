@@ -1,0 +1,46 @@
+@media screen and (min-width: 1919px){
+    .decode-text {
+    margin-top: 10%;
+    position: absolute;
+    z-index: 3;
+    width: 63%;
+    font-size: 4.9vw;
+    text-align: center;
+    margin-left: 18%;
+
+   
+  }
+
+  .point{
+    width: 110%;
+    margin-top: 20%;
+  }
+    }
+    @media screen and (min-width: 1439px)and (max-width: 1919px){
+        .decode-text {
+            margin-top: 10%;
+            position: absolute;
+            z-index: 3;
+            width: 63%;
+            font-size: 4.9vw;
+            text-align: center;
+            margin-left: 18%;
+        
+           
+          }
+
+          .point{
+            width: 110%;
+            margin-top: 20%;
+          }
+    }
+
+    @media screen and (min-width: 1366px)and (max-width: 1439px){
+        
+        
+    }
+        
+    
+    @media screen and (min-width: 1024px)and (max-width: 1366px){
+       
+    }
